@@ -11,6 +11,7 @@
 
     <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBSSvozSQ2FpluEIUKI4k2g_6R6E8W5Jc&callback=initMap"></script>
     
     <!-- Animate.css -->
     <link rel="stylesheet" href="css/animate.css">
@@ -102,7 +103,7 @@
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+                <div class="col-md-8 col-md-offset-2 text-center fh5co-heading fh5co-heading-sm animate-box">
                     <span>Our Special Events</span>
                     <h2>Wedding Events</h2>
                 </div>
@@ -124,6 +125,9 @@
                                         <span>Sunday 22</span>
                                         <span>November, 2020</span>
                                     </div>
+                                    <p>Kho K856, km33 Quoc Lo 9</p>
+                                    <div class="map-responsive" id="map">
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-6 text-center">
@@ -138,6 +142,9 @@
                                         <i class="icon-calendar"></i>
                                         <span>Saturday 05</span>
                                         <span>December, 2020</span>
+                                    </div>
+                                    <p>Xom 9 Giao Long, Giao Thuy</p>
+                                    <div class="map-responsive" id="map1">
                                     </div>
                                 </div>
                             </div>
@@ -243,6 +250,15 @@
         month: d.getMonth() + 1,
         day: d.getDate()
     });
+
+    function initMap() {
+        var macc = {lat: 16.753908, lng: 106.8548317};
+        var macc1 = {lat: 20.2319573, lng: 106.4420735};
+        var map = new google.maps.Map(document.getElementById('map'), {zoom: 15, center: macc});
+        var map1 = new google.maps.Map(document.getElementById('map1'), {zoom: 15, center: macc1});
+        var marker = new google.maps.Marker({position: macc, map: map});
+        var marker1 = new google.maps.Marker({position: macc1, map: map1});
+    }
 </script>
 
     </body>
