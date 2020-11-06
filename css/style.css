@@ -237,6 +237,14 @@ h1, h2, h3, h4, h5, h6, figure {
   float: left;
   position: relative;
 }
+.fh5co-img3 {
+  min-height: 1000px;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-img3 {
+    min-height: auto;
+  }
+}
 
 .fh5co-video {
   height: 450px;
@@ -739,7 +747,7 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 
-.map-responsive {
+/* .map-responsive {
   width: 100%;
   height: 350px;
   position: relative;
@@ -748,7 +756,7 @@ h1, h2, h3, h4, h5, h6, figure {
   .map-responsive {
     height: 200px;
   }
-}
+} */
 
 .fh5co-social-icons {
   margin: 0;
