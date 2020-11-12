@@ -1338,8 +1338,8 @@ form label {
 #fh5co-started {
   position: relative;
   height: 100vh;
-  display: flex;
   align-items: center;
+  display: flex;
 }
 #fh5co-started .overlay {
   position: absolute;

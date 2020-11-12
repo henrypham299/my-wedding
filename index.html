@@ -31,7 +31,6 @@
 
     <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBSSvozSQ2FpluEIUKI4k2g_6R6E8W5Jc&callback=initMap"></script>
     
     <!-- Animate.css -->
     <link rel="stylesheet" href="css/animate.css">
@@ -220,8 +219,10 @@
         <div class="container">
             <div class="row animate-box">
                 <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-                    <p style="font-weight: normal; color: rgba(251, 255, 255, 0.5);">Pham Quoc Hung - Techcombank - 19030266436014 (CN Nguyen Co Thach, Ha Noi)</p>
-                    <p style="font-weight: normal; color: rgba(251, 255, 255, 0.5);">Vo Thi Hai Yen - Vpbank - 93553985 (CN Phuong Mai, Ha Noi)</p>
+                    <p class="available-hide-show" style="font-weight: normal; color: rgba(251, 255, 255, 1);">Congratulations us <i class="icon-heart2"></i> <i class="icon-heart2"></i> <i class="icon-heart2"></i></p>
+                    <button class="available-hide-show" onclick="showMe()" style="font-weight: normal; color: rgba(251, 255, 255, 1); background-color: pink; border: 1px solid; border-radius: 4px;">Click me</button>
+                    <p class="available-show" style="display: none; font-weight: normal; color: rgba(251, 255, 255, 1);">Pham Quoc Hung - Techcombank - 19030266436014 (CN Nguyen Co Thach, Ha Noi)</p>
+                    <p class="available-show" style="display: none; font-weight: normal; color: rgba(251, 255, 255, 1);">Vo Thi Hai Yen - Vpbank - 93553985 (CN Phuong Mai, Ha Noi)</p>
                 </div>
             </div>
         </div>
@@ -267,13 +268,9 @@
         hours: 8,
     });
 
-    function initMap() {
-        // var macc = {lat: 16.753908, lng: 106.8548317};
-        // var macc1 = {lat: 20.2319573, lng: 106.4420735};
-        // var map = new google.maps.Map(document.getElementById('map'), {zoom: 15, center: macc});
-        // var map1 = new google.maps.Map(document.getElementById('map1'), {zoom: 15, center: macc1});
-        // var marker = new google.maps.Marker({position: macc, map: map});
-        // var marker1 = new google.maps.Marker({position: macc1, map: map1});
+    function showMe() {
+        $('.available-hide-show').addClass('hide');
+        $('.available-show').addClass('show');
     }
 </script>
 
